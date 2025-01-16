@@ -1,56 +1,44 @@
-#include <stdio.h>
-#include <stdlib.h>
-# define size 4
+#include<stdio.h>
+#include<stdlib.h>
+#define size 6
 int queue[size];
 int front=-1;
 int rear=-1;
-void enqueue(int x){
+void enqueue(int val){
     if(rear==size-1){
-        printf("STACK OVERFLOW");
+        printf("overflow!");
     }
-    else if(front==-1 && rear==-1){
+    else if(front ==-1 && rear==-1){
         front=rear=0;
-        queue[rear]=x;
+        queue[front]=val;
     }
     else{
-        rear=rear+1;
-        queue[rear]=x;
+        rear++;
+        queue[rear]=val;
     }
 }
-
 void dequeue(){
     if(front==-1 && rear==-1){
-        printf("underflow");
+        printf("underflow!");
     }
-    else if(front==rear){
+    else if(front ==rear){
         front=rear=-1;
     }
     else{
-        printf("the deleted elment is %d ",queue[front]);
-        front=front+1;
+        front++;
     }
 }
+int peek(){
+    return queue[front];
+}
 void display(){
-    if(front==-1 && rear==-1){
-        printf("STACK UNDERFLOW");
-    }
     for(int i=front;i<=rear;i++){
         printf("%d ",queue[i]);
     }
 }
-void peek(){
-    if(front ==-1 && rear ==-1){
-        printf("STACK UNDERFLOW");
-    }
-    else{
-        print("%d ",queue[front]);
-    }
-}
 int main(){
-    enqueue(1);
-    enqueue(2);
-    enqueue(3);
-    enqueue(4);
-    dequeue();
+    enqueue(10);
+    enqueue(20);
+    enqueue(30);
     display();
 }
