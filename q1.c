@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main (){
+    int x =3;     
+    float y = 3.0; 
+    if (x==y)
+    printf ("x and y are equal");
+    else 
+    printf ("x and y are not equal");
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int x = 65;
+ // char y = 'A';
+//implicit conversion --->solution:x and y are equal
