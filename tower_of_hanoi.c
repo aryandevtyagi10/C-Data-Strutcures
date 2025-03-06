@@ -9,5 +9,6 @@ void toh(int n,char a, char b,char c){
 int main(){
     int n=3;
     char A,B,C;
-    toh(5,'A','B','C');
+    toh(3,'A','B','C');
 }
+
