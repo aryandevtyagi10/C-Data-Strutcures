@@ -1,0 +1,28 @@
+A tree is a hierarchical data structure composed of nodes connected by edges. The topmost node is called the root, and nodes without children are called leaves. Each node can have zero or more children, and each child has exactly one parent (except for the root).
+Key Concepts 
+
+• Node: An element in the tree that holds data. 
+• Edge: A connection between two nodes. 
+• Root: The topmost node in the tree. 
+• Child: A node directly connected to another node when moving away from the root. 
+• Parent: The node directly connected to another node when moving towards the root. 
+• Leaf: A node with no children. 
+• Subtree: A tree formed by a node and its descendants. 
+• Depth: The distance between a node and the root. 
+• Height: The distance between a node and its furthest leaf. 
+
+Types of Trees 
+
+• Binary Tree: Each node has at most two children, referred to as the left child and the right child. 
+• Binary Search Tree (BST): A binary tree where the value of each node is greater than or equal to the values in its left subtree and less than or equal to the values in its right subtree. 
+• AVL Tree: A self-balancing binary search tree where the heights of the left and right subtrees of any node differ by at most one. 
+• B-Tree: A self-balancing tree that allows for more than two children per node, commonly used in databases and file systems. [1]  
+
+Applications 
+
+• Representing hierarchical data, such as organizational structures or file systems. 
+• Implementing search algorithms, such as in binary search trees. 
+• Parsing expressions and code. 
+• Routing data in networks. 
+• Storing and retrieving data in databases. 
+
