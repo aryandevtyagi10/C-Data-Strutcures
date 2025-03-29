@@ -1,0 +1,70 @@
+Graphs Terminology
+A graph consists of:
+ A set, V, of vertices (nodes)
+ A collection, E, of pairs of vertices from V called edges (arcs)
+Edges, also called arcs, are represented by (u, v) and are either:
+Directed if the pairs are ordered (u, v)
+u the origin
+v the destination
+Undirected if the pairs are unordered
+A graph is a pictorial representation of a set of objects where some pairs of objects are 
+connected by links. The interconnected objects are represented by points termed 
+as vertices, and the links that connect the vertices are called edges.
+Formally, a graph is a pair of sets (V, E), where V is the set of vertices and Eis the set 
+of edges, connecting the pairs of vertices. Take a look at the following graph −
+In the above graph,
+V = {a, b, c, d, e}
+E = {ab, ac, bd, cd, de}
+Then a graph can be:
+Directed graph (di-graph) if all the edges are directed
+Undirected graph (graph) if all the edges are undirected
+Mixed graph if edges are both directed or undirected
+Illustrate terms on graphs
+End-vertices of an edge are the endpoints of the edge.
+Two vertices are adjacent if they are endpoints of the same edge.
+An edge is incident on a vertex if the vertex is an endpoint of the edge.
+Outgoing edges of a vertex are directed edges that the vertex is the origin.
+Incoming edges of a vertex are directed edges that the vertex is the destination.
+Degree of a vertex, v, denoted deg(v) is the number of incident edges.
+Out-degree, outdeg(v), is the number of outgoing edges.
+In-degree, indeg(v), is the number of incoming edges.
+Parallel edges or multiple edges are edges of the same type and end-vertices
+Self-loop is an edge with the end vertices the same vertex.
+
+
+Simple graphs have no parallel edges or self-loops
+Properties
+If graph, G, has m edges then Σv∈G deg(v) = 2m
+If a di-graph, G, has m edges then
+Σv∈G indeg(v) = m = Σv∈G outdeg(v)
+If a simple graph, G, has m edges and n vertices:
+If G is also directed then m ≤ n(n-1)
+If G is also undirected then m ≤ n(n-1)/2
+So a simple graph with n vertices has O(n
+2
+) edges at most
+More Terminology
+Path is a sequence of alternating vetches and edges such that each successive vertex 
+is connected by the edge. Frequently only the vertices are listed especially if there are 
+no parallel edges.
+Cycle is a path that starts and end at the same vertex.
+Simple path is a path with distinct vertices.
+Directed path is a path of only directed edges
+Directed cycle is a cycle of only directed edges.
+Sub-graph is a subset of vertices and edges.
+Spanning sub-graph contains all the vertices.
+Connected graph has all pairs of vertices connected by at least one path.
+Connected component is the maximal connected sub-graph of a unconnected graph.
+Forest is a graph without cycles.
+Tree is a connected forest (previous type of trees are called rooted trees, these are free 
+trees)
+Spanning tree is a spanning subgraph that is also a tree.
+More Properties
+If G is an undirected graph with n vertices and m edges:
+ If G is connected then m ≥ n - 1
+ If G is a tree then m = n - 1
+ If G is a forest then m ≤ n – 1
+Graph Traversal:
+1. Depth First Search
+2. Breadth First Search
+
